@@ -11,8 +11,8 @@ export default function Home() {
     },
   ];
   return (
-    <div className="bg-gradient-to-t from-green-950 to-cyan-500 bg-no-repeat">
-      <main className="max-w-[600px] mx-auto flex justify-center items-center min-h-[100vh]">
+    <div className="bg-gradient-to-t from-green-600 to-yellow-400 bg-no-repeat">
+      <main className="max-w-[600px] mx-auto flex justify-center items-center min-h-[100vh] px-3">
         <div>
           <img src="/logo.png" alt="" className="mb-5" />
           <div className="text-white text-center">
@@ -27,7 +27,7 @@ export default function Home() {
                 <Link
                   href={item.link}
                   key={item.id}
-                  className="bg-white rounded-full text-center py-3 px-3 mt-4 cursor-pointer hover:scale-110 transition-all">
+                  className="bg-white rounded-full text-center py-3 px-3 mt-4 cursor-pointer hover:scale-110 transition-all font-bold">
                   {item.name}
                 </Link>
               );
@@ -46,11 +46,6 @@ export default function Home() {
                 />
               );
             })}
-            <Link
-              href="https://www.google.com/maps/search/%C3%87%C4%B0LEK+MAH.,+63147+SK.,+NO:+1,+%C4%B0%C3%87+KAPI+NO:+8,+MEGACENTER+I%C5%9E+MERKEZI,+Akdeniz%2FMersin/@36.8853765,34.719024,12z/data=!3m1!4b1?entry=ttu"
-              className="border-1 rounded-full bg-white cursor-pointer p-1">
-              <img src="/location.png" alt="" className="w-[25px] h-[25px]" />
-            </Link>
           </div>
         </div>
       </main>
