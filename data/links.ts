@@ -14,35 +14,26 @@ const linkData = [
   {
     id: 1,
     link: "tel:+903245042424",
-    name: "Tel  ",
-    image: "tel:+903245042424",
+    name: "Facebook",
+    image: "/assets/social-links/facebook.png",
   },
   {
     id: 2,
     link: "tel:+905013730633",
-    name: "Warehouse Gsm",
-    image: "tel:+905013730633",
+    name: "Whatsapp",
+    image: "/assets/social-links/whatsapp.png",
   },
   {
     id: 3,
     link: "tel:+905011210633",
-    name: "Logistics Gsm",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    name: "instagram",
+    image: "/assets/social-links/instagram.png",
   },
   {
     id: 4,
     link: "mailto:info@sialtr.com",
-    name: "Email Address",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
-  },
-  {
-    id: 5,
-    link: "http://www.sialtr.com/",
-    name: "Website",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    name: "linkedin",
+    image: "/assets/social-links/linkedin.png",
   },
 ];
 

@@ -11,10 +11,26 @@ export default function Home() {
     },
   ];
   return (
-    <div className="bg-gradient-to-t from-green-600 to-yellow-400 bg-no-repeat">
-      <main className="max-w-[600px] mx-auto flex justify-center items-center min-h-[100vh] px-3">
+    <div className="bg-no-repeat relative">
+      <div className="absolute h-[100vh] w-[100vw]">
+        <video
+          loop
+          muted
+          playsInline
+          className="bg-cover"
+          width="100%"
+          height="100%"
+          autoPlay>
+          <source
+            src="farm.mp4"
+            type="video/mp4"
+            className="h-[100vh] w-[100vw]"
+          />
+        </video>
+      </div>
+      <main className="max-w-[600px] mx-auto flex justify-center items-center min-h-[100vh] px-3 z-50 relative">
         <div>
-          <img src="/logo.png" alt="" className="mb-5" />
+          <img src="/logo.png" alt="" className="mb-5 relative translate-x-5" />
           <div className="text-white text-center">
             <h1 className="text-3xl font-bold ">Sial Company</h1>
             <h1 className="text-center text-gray-400">foodstuffs | Oils</h1>
@@ -27,23 +43,11 @@ export default function Home() {
                 <Link
                   href={item.link}
                   key={item.id}
-                  className="bg-white rounded-full text-center py-3 px-3 mt-4 cursor-pointer hover:scale-110 transition-all font-bold">
-                  {item.name}
+                  className="bg-white rounded-lg text-center py-2 px-2 mt-4 cursor-pointer hover:scale-105 transition-all font-bold shadow-md shadow-black flex justify-between items-center">
+                  <img src={item.image} alt="" className="w-[30px] h-[30px]" />
+                  <h1> {item.name}</h1>
+                  <h1></h1>
                 </Link>
-              );
-            })}
-          </div>
-
-          {/*  social links */}
-          <div className="gap-4 flex mt-6 justify-center items-center">
-            {socialLinks.map((link) => {
-              return (
-                <SocialIcon
-                  className="shadow"
-                  style={SocialIconStyle}
-                  url={link}
-                  key={link}
-                />
               );
             })}
           </div>
