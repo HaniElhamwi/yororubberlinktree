@@ -6,7 +6,7 @@ import { SocialIcon } from "react-social-icons";
 export default function Home() {
   return (
     <div className="bg-no-repeat relative">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full ">
         <video
           loop
           muted
@@ -16,7 +16,7 @@ export default function Home() {
           <source src="farm.mp4" type="video/mp4" />
         </video>
       </div>
-      <main className="max-w-[600px] mx-auto   min-h-[100vh] px-3 z-50 relative flex-col flex overflow-hidden mb-4">
+      <main className="max-w-[600px] mx-auto   min-h-[100vh] px-3 z-50 relative flex-col flex overflow-x-hidden mb-4">
         <div>
           <img
             src="/logo.png"
