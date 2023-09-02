@@ -77,13 +77,13 @@ export default function Home() {
           </div>
         </Link>
       </main>
-      <div className="fixed_button ">
+      <Link download href="/sial.vcf" className="fixed_button ">
         <img
           src="/icons/add-user.png"
           alt=""
           className="text-white w-[50px] h-[50px] z-50"
         />
-      </div>
+      </Link>
     </div>
   );
 }
