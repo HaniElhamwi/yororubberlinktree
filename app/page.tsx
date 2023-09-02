@@ -6,7 +6,7 @@ import { SocialIcon } from "react-social-icons";
 export default function Home() {
   return (
     <div className="bg-no-repeat relative">
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <video
           loop
           muted
@@ -16,7 +16,7 @@ export default function Home() {
           <source src="farm.mp4" type="video/mp4" />
         </video>
       </div>
-      <main className="max-w-[600px] mx-auto   min-h-[100vh] px-3 z-50 relative flex-col flex">
+      <main className="max-w-[600px] mx-auto   min-h-[100vh] px-3 z-50 relative flex-col flex overflow-hidden mb-4">
         <div>
           <img
             src="/logo.png"
@@ -49,16 +49,8 @@ export default function Home() {
         </div>
 
         <Link
-          href="/sial.vcf"
-          download
-          className="mt-5 bg-[#b5b19f] p-2 rounded flex flex-row gap-4 items-center">
-          <img src="/icons/contact.png" alt="" className="w-[50px] h-[50px]" />
-          <h1 className="text-white">Save to Contact</h1>
-        </Link>
-
-        <Link
           href="https://www.google.com/maps/search/+Cami%C5%9Ferif+Mah.5248+Sk+No:2+JBY+PLAZA+Kat:5+D:26.+Akdeniz%2F+Mersin+++++++++++++++(%C4%B0%C3%A7el),T%C3%BCrkiye./@36.8014897,34.6267098,17z/data=!3m1!4b1?entry=ttu"
-          className="bg-white rounded-xl mt-8 p-2  flex flex-row gap-2 items-center hover:scale-105 transition bg-[#b5b19f]">
+          className=" rounded-xl mt-8 p-2  flex flex-row gap-2 items-center hover:scale-105 transition bg-[#b5b19f]">
           <img src="/icons/address.png" alt="" className="w-[30px] h-[30px]" />
           <div>
             <h1 className="text-xl  font-bold text-center text-white">
@@ -85,6 +77,13 @@ export default function Home() {
           </div>
         </Link>
       </main>
+      <div className="fixed_button ">
+        <img
+          src="/icons/add-user.png"
+          alt=""
+          className="text-white w-[50px] h-[50px] z-50"
+        />
+      </div>
     </div>
   );
 }
