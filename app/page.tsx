@@ -21,7 +21,7 @@ export default function Home() {
           <img
             src="/logo.png"
             alt=""
-            className="mb-5 relative translate-x-5 mt-8"
+            className="pb-5 relative translate-x-5 mt-8"
           />
           <div className="text-white text-center">
             <h1 className="text-3xl font-bold ">Sial Company</h1>
