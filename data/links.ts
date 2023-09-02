@@ -19,7 +19,7 @@ const linkData = [
   },
   {
     id: 2,
-    link: "tel:+905013730633",
+    link: "https://api.whatsapp.com/send?phone=+905013730633",
     name: "Whatsapp",
     image: "/assets/social-links/whatsapp.png",
   },
@@ -31,19 +31,19 @@ const linkData = [
   },
   {
     id: 4,
-    link: "https://wa.me/+905315191566",
+    link: "https://www.linkedin.com/company/sial-co/",
     name: "linkedin",
     image: "/assets/social-links/linkedin.png",
   },
   {
     id: 5,
-    link: "https://wa.me/+903245040494",
+    link: "tel:+903245040494",
     name: "Head Office Phone",
     image: "/icons/phone.png",
   },
   {
     id: 7,
-    link: "https://wa.me/+905315191566",
+    link: "tel:+905315191566",
     name: "Warehouse Phone",
     image: "/icons/phone.png",
   },
@@ -58,13 +58,13 @@ const linkData = [
     id: 8,
     link: "tel:+905013730633",
     name: "Warehouse Gsm",
-    image: "/icons/phone.png",
+    image: "/icons/gsm.png",
   },
   {
     id: 9,
     link: "tel:+905011210633",
     name: "Logistics Gsm",
-    image: "/icons/phone.png",
+    image: "/icons/gsm.png",
   },
 ];
 
