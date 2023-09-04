@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Watfa Linktree</title>
+        <title>Loyal Linktree</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favpng.png" sizes="any" />
       </head>

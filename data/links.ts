@@ -13,44 +13,44 @@ const profileData = {
 const linkData = [
   {
     id: 1,
-    link: "https://www.facebook.com/watfa.sweet/",
+    link: "https://m.facebook.com/LOYAL.IM.EX",
     name: "Facebook",
     image: "/assets/social-links/facebook.png",
   },
   {
     id: 2,
-    link: "https://api.whatsapp.com/send?phone=+905314061033",
+    link: "https://api.whatsapp.com/send?phone=+905306817889",
     name: "Whatsapp",
     image: "/assets/social-links/whatsapp.png",
   },
   {
     id: 3,
-    link: "https://www.instagram.com/p/Cu9H9fdtG4r/?img_index=1",
+    link: "https://www.instagram.com/loyal.im.ex/",
     name: "instagram",
     image: "/assets/social-links/instagram.png",
   },
   {
     id: 4,
-    link: "https://watfasekerleme.com/",
+    link: "https://loyalagro.com/",
     name: "Website",
     image: "/icons/website.png",
   },
 
   {
     id: 5,
-    link: "tel:+905314061033",
+    link: "tel:+905306817889",
     name: "Head Office Phone",
     image: "/icons/phone.png",
   },
   {
     id: 6,
-    link: "mailto:info@watfasekerleme.com",
+    link: "mailto:info@loyalagro.com",
     name: "Email",
     image: "/icons/email.png",
   },
   {
     id: 9,
-    link: "tel:+905314061033",
+    link: "tel:+905306817889",
     name: "Logistics Gsm",
     image: "/icons/gsm.png",
   },
