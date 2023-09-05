@@ -14,7 +14,7 @@ export default function Home() {
           <source src="spicy.mp4" type="video/mp4" />
         </video>
       </div>
-      <main className="max-w-[600px] mx-auto   min-h-[100vh] px-3 z-50 relative flex-col flex overflow-x-hidden mb-4">
+      <main className="max-w-[600px] mx-auto min-h-[110vh] px-3 z-50 relative flex-col flex overflow-x-hidden pb-5">
         <div>
           <div className="flex justify-center items-center">
             <img
