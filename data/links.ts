@@ -19,7 +19,7 @@ const linkData = [
   },
   {
     id: 2,
-    link: "https://api.whatsapp.com/send?phone=+905306817889",
+    link: "https://wa.me/+905306817889",
     name: "Whatsapp",
     image: "/assets/social-links/whatsapp.png",
   },
@@ -34,6 +34,12 @@ const linkData = [
     link: "https://loyalagro.com/",
     name: "Website",
     image: "/icons/website.png",
+  },
+  {
+    id: 4,
+    link: "http://application.senior.com.tr/",
+    name: "Online Catalog",
+    image: "/icons/catalog.png",
   },
 
   {

@@ -62,8 +62,9 @@ export default function Home() {
             </h6>
           </div>
         </Link>
-
-        <div className="flex flex-row gap-3 mt-3 justify-center">
+        <Link
+          href="http://application.senior.com.tr/"
+          className="flex flex-row gap-3 mt-3 justify-center">
           <div className="flex flex-row gap-3 bg-white rounded items-center px-2 py-1 cursor-pointer">
             <img src="/icons/mac.png" alt="" className="w-[20px] h-[20px]" />
             <div className="flex flex-col">
@@ -73,8 +74,9 @@ export default function Home() {
               <h3 className="text-sm text-gray-700 font-bold">Apple Store</h3>
             </div>
           </div>
-
-          <div className="flex flex-row gap-3 bg-white rounded items-center px-2 py-1 cursor-pointer">
+          <Link
+            href="http://application.senior.com.tr/"
+            className="flex flex-row gap-3 bg-white rounded items-center px-2 py-1 cursor-pointer">
             <img
               src="/icons/playstore.png"
               alt=""
@@ -86,8 +88,8 @@ export default function Home() {
               </h6>
               <h3 className="text-sm text-gray-700 font-bold">Google play</h3>
             </div>
-          </div>
-        </div>
+          </Link>
+        </Link>
       </main>
       <Link download href="/loyal.vcf" className="fixed_button ">
         <img
