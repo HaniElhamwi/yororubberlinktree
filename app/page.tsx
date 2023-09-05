@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           <div className="text-white text-center">
             <h1 className="text-3xl font-bold ">Loyal Company</h1>
-            <h1 className="text-center text-gray-50">Spicy ~ Nuts</h1>
+            <h1 className="text-center text-gray-50">Spicy | Nuts</h1>
           </div>
 
           {/* links */}
