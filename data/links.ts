@@ -1,64 +1,60 @@
-const socialLinks = [
-  "https://www.linkedin.com/company/sial-co/",
-  "https://www.instagram.com/sialtr/?igshid=MjEwN2IyYWYwYw%3D%3D",
-  "https://www.facebook.com/people/Sial/100093416567903/?mibextid=LQQJ4d",
-  "https://www.google.com/maps/search/?api=1&query=%C3%87%C4%B0LEK+MAH.,+63147+SK.,+NO:+1,+%C4%B0%C3%87+KAPI+NO:+8,+MEGACENTER+I%C5%9E+MERKEZI,+Akdeniz/Mersin",
-];
 const profileData = {
   userName: "Watfa",
   // photoLink: logo,
   desc: "foodstuffs | Oils",
 };
 
-const linkData = [
+const socialLinks = [
   {
     id: 1,
-    link: "https://m.facebook.com/LOYAL.IM.EX",
+    link: "https://www.facebook.com/profile.php?id=100083532818486&mibextid=2JQ9oc",
     name: "Facebook",
-    image: "/assets/social-links/facebook.png",
+    image: "/icons/facebook-outline.png",
   },
   {
     id: 2,
-    link: "https://wa.me/+905306817889",
+    link: "https://wa.me/+905386857664",
     name: "Whatsapp",
-    image: "/assets/social-links/whatsapp.png",
+    image: "/icons/whatsapp-outline.png",
   },
   {
     id: 3,
-    link: "https://www.instagram.com/loyal.im.ex/",
+    link: "https://instagram.com/yaser.marar77?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
     name: "instagram",
-    image: "/assets/social-links/instagram.png",
+    image: "/icons/instagram-outline.png",
   },
+];
+
+const linkData = [
   {
     id: 4,
-    link: "https://loyalagro.com/",
+    link: "http://yororubber.com/",
     name: "Website",
     image: "/icons/website.png",
   },
   {
-    id: 4,
-    link: "http://application.senior.com.tr/",
+    id: 7,
+    link: "http://yororubber.com/products",
     name: "Online Catalog",
     image: "/icons/catalog.png",
   },
-
   {
     id: 5,
-    link: "tel:+905306817889",
-    name: "Head Office Phone",
+    link: "tel:+905386857664",
+    name: "Phone",
     image: "/icons/phone.png",
   },
   {
     id: 6,
-    link: "mailto:info@loyalagro.com",
+    link: "mailto:info@yororubber.com",
     name: "Email",
     image: "/icons/email.png",
   },
   {
-    id: 9,
-    link: "tel:+905306817889",
-    name: "Logistics Gsm",
-    image: "/icons/gsm.png",
+    id: 10,
+    link: "/catalog.pdf",
+    name: "Download Catalog",
+    image: "/icons/download.png",
   },
 ];
 

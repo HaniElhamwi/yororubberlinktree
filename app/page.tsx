@@ -1,44 +1,49 @@
-import { linkData } from "@/data";
+import { linkData, socialLinks } from "@/data";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-no-repeat relative">
-      <div className="absolute top-0 left-0 w-full h-full ">
-        <video
-          loop
-          muted
-          playsInline
-          className="object-cover w-full h-full"
-          autoPlay>
-          <source src="spicy.mp4" type="video/mp4" />
-        </video>
-      </div>
+    <div className="bg-no-repeat relative pattern">
       <main className="max-w-[600px] mx-auto min-h-[110vh] px-3 z-50 relative flex-col flex overflow-x-hidden pb-5">
         <div>
           <div className="flex justify-center items-center">
             <img
               src="/logo.png"
               alt=""
-              className="pb-5 relative mt-8 h-[30 0px] w-[300px]"
+              className="pb-5 relative mt-8 h-[170px] w-[170px]"
             />
           </div>
           <div className="text-white text-center">
-            <h1 className="text-3xl font-bold ">Loyal Company</h1>
-            <h1 className="text-center text-gray-50">Spicy | Nuts</h1>
+            <h1 className="text-3xl font-bold ">Yororubber Company</h1>
+            <h1 className="text-center text-white text-sm">
+              YoroRubber is a leading provider of high-quality car parts,
+              serving a diverse range of vehicle makes and models. Our team of
+              experts is dedicated to delivering top-notch automotive solutions
+              to our valued customers
+            </h1>
+          </div>
+
+          <div className="flex flex-row justify-center gap-3 mt-5">
+            {socialLinks.map((item) => {
+              return (
+                <Link
+                  href={item.link}
+                  key={item.id}
+                  className="bg-yellow-500 rounded hover:scale-110 transition-all cursor-pointer p-2">
+                  <img src={item.image} alt="" className="w-[30px] h-[30px]" />
+                </Link>
+              );
+            })}
           </div>
 
           {/* links */}
           <div className="flex flex-col">
-            <h1 className="text-white font-bold text-md text-center mt-8">
-              Social Links
-            </h1>
             {linkData.map((item) => {
               return (
                 <Link
                   href={item.link}
                   key={item.id}
-                  className="bg-[#ffcc00] rounded-lg text-center py-2 px-2 mt-4 cursor-pointer hover:scale-105 transition-all font-bold shadow-md shadow-yellow-500 flex justify-between items-center">
+                  className="bg-black rounded-lg text-center py-2 px-2 mt-4 cursor-pointer hover:scale-105 transition-all font-bold shadow-md shadow-black flex justify-between items-center">
                   <img src={item.image} alt="" className="w-[30px] h-[30px]" />
                   <h1 className="text-white"> {item.name}</h1>
                   <h1></h1>
@@ -49,49 +54,21 @@ export default function Home() {
         </div>
 
         <Link
-          href="https://www.google.com/maps/place/LOYAL+AGRO+COMPANY+-+SAF+BAKL%C4%B0YAT/@36.8407968,34.4044288,9.78z/data=!4m10!1m2!2m1!1sloyal+!3m6!1s0x1527f1be9b234769:0x957e2c267a0256d9!8m2!3d36.8257905!4d34.6816342!15sCgVsb3lhbJIBH2FncmljdWx0dXJhbF9wcm9kdWN0X3dob2xlc2FsZXLgAQA!16s%2Fg%2F11kq8g0lvz?entry=ttu"
-          className="rounded-xl mt-2 p-2  flex flex-row gap-2 items-center hover:scale-105 transition bg-[#ffcc00]">
+          href="https://www.google.com/maps/place/D+Blok+D:,+14,+Pancarl%C4%B1,+58020.Nolu+Sk.+No:6,+27060+%C5%9Eehitkamil%2FGaziantep/@37.0696692,37.342816,17z/data=!3m1!4b1!4m5!3m4!1s0x1531e10c8268aa43:0x44fa726a729b1cd2!8m2!3d37.0696649!4d37.3453909?entry=ttu"
+          className="rounded-xl mt-2 p-2  flex flex-row gap-2 items-center hover:scale-105 transition bg-black">
           <img src="/icons/address.png" alt="" className="w-[30px] h-[30px]" />
           <div>
             <h1 className="text-xlfont-bold text-center text-white">
               Turkey Address
             </h1>
             <h6 className="text-sm  font-medium text-center text-white">
-              Karaduvar mahallesi 65149 sokak No:3 65149, Sok, 33020
-              Akdeniz/Mersin
+              Yukarıbeylerbeyi, /60014 D Blok D:, 14 Nolu Sk. No:6, 27630
+              Şehitkamil/Gaziantep
             </h6>
           </div>
         </Link>
-        <Link
-          href="http://application.senior.com.tr/"
-          className="flex flex-row gap-3 mt-3 justify-center">
-          <div className="flex flex-row gap-3 bg-white rounded items-center px-2 py-1 cursor-pointer">
-            <img src="/icons/mac.png" alt="" className="w-[20px] h-[20px]" />
-            <div className="flex flex-col">
-              <h6 className="text-[12px] text-gray-600 text-center font-medium">
-                Get it on
-              </h6>
-              <h3 className="text-sm text-gray-700 font-bold">Apple Store</h3>
-            </div>
-          </div>
-          <Link
-            href="http://application.senior.com.tr/"
-            className="flex flex-row gap-3 bg-white rounded items-center px-2 py-1 cursor-pointer">
-            <img
-              src="/icons/playstore.png"
-              alt=""
-              className="w-[20px] h-[20px]"
-            />
-            <div className="flex flex-col">
-              <h6 className="text-[12px] text-gray-600 text-center font-medium">
-                Get it on
-              </h6>
-              <h3 className="text-sm text-gray-700 font-bold">Google play</h3>
-            </div>
-          </Link>
-        </Link>
       </main>
-      <Link download href="/loyal.vcf" className="fixed_button ">
+      <Link download href="/yororubber.vcf" className="fixed_button ">
         <img
           src="/icons/add-user.png"
           alt=""
