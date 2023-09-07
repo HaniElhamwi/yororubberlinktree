@@ -52,7 +52,7 @@ const linkData = [
   },
   {
     id: 10,
-    link: "/catalog.pdf",
+    link: "https://heyzine.com/flip-book/64abcbd947.html",
     name: "Download Catalog",
     image: "/icons/download.png",
   },
